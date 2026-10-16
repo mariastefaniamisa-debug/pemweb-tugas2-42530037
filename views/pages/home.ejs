@@ -1,0 +1,10 @@
+<%- include('../partials/header', { pageTitle: 'Beranda' }) %>
+
+<section class="hero">
+  <h1>Halo, <%= userName %>! 👋</h1>
+  <p>Perpustakaan kami saat ini menyimpan <strong><%= totalBuku %> judul buku</strong>.</p>
+  <p>Buku terbaru: <em><%= bukuTerbaru.judul %></em> oleh <%= bukuTerbaru.penulis %>.</p>
+  <a href="/katalog" class="btn-hero">Lihat katalog</a>
+</section>
+
+<%- include('../partials/footer') %>

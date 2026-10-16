@@ -1,0 +1,19 @@
+<%- include('../partials/header', { pageTitle: 'Katalog Buku' }) %>
+
+<h2 class="section-title">Koleksi Buku</h2>
+
+<div class="book-grid">
+  <% daftarBuku.forEach(b => { %>
+    <div class="book-card">
+      <div class="book-cover">📖</div>
+      <div class="book-body">
+        <h3><%= b.judul %></h3>
+        <p class="author"><%= b.penulis %></p>
+        <span class="badge"><%= b.kategori %></span>
+        <p class="meta">Tahun terbit: <%= b.tahun %></p>
+      </div>
+    </div>
+  <% }) %>
+</div>
+
+<%- include('../partials/footer') %>
